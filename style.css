@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #454647;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+.mainTitle {
+    text-align: center;
+    color: white;
+    padding: 15px 15px;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card {
+    background-color: #fff;
+    width: calc((100% - 90px) / 3);
+    height: 30rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 2px #797777;
+
+}
+.card img {
+    display: block;
+  width: 100%;
+  height: 18rem;
+  object-fit:fill;
+  border-radius: 10px; 
+}
+.detials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10rem;
+    gap: 10px;
+    position: relative;
+    padding: 15px 5px;
+}
+.detials h2 {
+    text-align: center;
+    color:#454647;
+    text-transform: capitalize;
+}
+.detials button {
+    align-self: flex-end;
+    align-content: end;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  background: #6E6D70;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #ffffff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+   
+}
+.pricedetials{
+    display: flex;
+    gap: 15px;
+}
+.pricedetials span:last-of-type {
+    text-decoration: line-through;
+    color: red;
+}
+button:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(0, 0, 0, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
